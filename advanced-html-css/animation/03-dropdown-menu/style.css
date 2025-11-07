@@ -1,3 +1,18 @@
+@keyframes open-menu {
+    from {
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+    to {
+        transform: scaleY(100%);
+        transform-origin: top;
+    }
+    90% {
+        transform: scaleY(105%);
+        transform-origin: top;
+    }
+}
+
 .dropdown-container {
   max-width: 250px;
   margin: 40px auto;
@@ -27,6 +42,7 @@ ul.dropdown-menu li:hover {
 
 .visible {
   display: block;
+    animation: open-menu 1s;
 }
 
 
